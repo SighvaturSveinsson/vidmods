@@ -1,0 +1,52 @@
+@keyframes MiddleAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes circleSpinOne {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes circleSpinTwo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.outerCircle {
+    animation: 20s linear infinite;
+    animation-name: circleSpinOne;
+    transform-origin: 510% 460%;
+
+}
+
+.innerCircle {
+    animation: 10s linear infinite;
+    animation-name: circleSpinTwo;
+    transform-origin: 509% 460%;
+}
+
+.MiddleAnimation {
+	animation: 20s linear infinite;
+    animation-name: MiddleAnimation;
+    transform-origin: 510% 460%;
+}
+
+.hide{
+    
+}
